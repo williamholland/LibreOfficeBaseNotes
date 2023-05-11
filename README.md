@@ -12,3 +12,11 @@ to have a dropdown menu that is populated with something different than it uses 
 ## Queries
 
 If you want to do a `union` you need to open the query in the SQL editor and on the toolbar at the top, on the right choose "Run SQL Command Directly"
+
+### Time Deltas
+
+To get a delta for dates you do something like this
+
+  SELECT * FROM "WORKOUT" WHERE DATEDIFF( 'mm', "DATE", CURDATE( ) ) < 1
+ 
+notice the single quotes on mm
